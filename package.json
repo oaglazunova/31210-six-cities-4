@@ -4,10 +4,10 @@
   "private": true,
   "description": "Личный проект «Шесть городов» от HTML Academy",
   "scripts": {
-    "eslint": "eslint --ext .jsx --ext .js src/",
+    "eslint": "eslint --ext .jsx,.js src/",
     "test": "npm run eslint",
-	"build": "webpack --mode production",
-	"start": "webpack-dev-server"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -23,5 +23,9 @@
   },
   "engines": {
     "node": "10"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
