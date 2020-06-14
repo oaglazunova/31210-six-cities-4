@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import {App} from './components/app/app.jsx';
 
 const init = () => {
-  const settings = {
-    rentProposals: 1337,
+  const data = {
+    proposalsCount: 1337,
+    proposalsDescription: [
+      `Beautiful & luxurious apartment at great location`,
+      `Wood and stone place`,
+      `Small and ugly little space`,
+      `Absurdly spacious mansion`
+    ]
   };
 
   ReactDOM.render(
-      <App rentProposals={settings.rentProposals} />,
+      <App rentProposals={data.proposalsCount} proposalsDescription={data.proposalsDescription} />,
       document.querySelector(`#root`)
   );
 };

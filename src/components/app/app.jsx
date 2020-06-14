@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Main} from '../main/main.jsx';
 
 export const App = (props) => {
-  // eslint-disable-next-line react/prop-types
-  const {rentProposals} = props;
+  const {proposalsCount, proposalsDescription} = props;
 
-  return <Main rentProposals={rentProposals} />;
+  return <Main proposalsCount={proposalsCount} proposalsDescription={proposalsDescription} />;
+};
+
+App.propTypes = {
+  proposalsCount: PropTypes.number,
+  proposalsDescription: PropTypes.string,
 };
