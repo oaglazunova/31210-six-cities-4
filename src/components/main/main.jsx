@@ -7,11 +7,11 @@ export const Main = (props) => {
   return <div>
     <h1>Rent Proposals: {proposalsCount}</h1>
 
-    {proposalsDescription.map((i, key) => {
+    {proposalsDescription.map((item) => {
       return (
-        <div key={key}>
-          <h2>{i}</h2>
-          <img alt={i} src="img/studio-01.jpg" />
+        <div key={item}>
+          <h2>{item}</h2>
+          <img alt={item} src="img/studio-01.jpg" />
         </div>
       );
     })}
