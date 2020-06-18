@@ -2,13 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Main} from '../main/main.jsx';
 
-export const App = (props) => {
-  const {proposalsCount, proposalsDescription} = props;
+const handleTitleClick = () => {
+  // eslint-disable-next-line no-console
+  console.log(`Title is clicked`);
+};
 
-  return <Main proposalsCount={proposalsCount} proposalsDescription={proposalsDescription} />;
+export const App = (props) => {
+  const {offerCount, offerDescriptions} = props;
+
+  return <Main offerCount={offerCount} offerDescriptions={offerDescriptions} handleTitleClick={handleTitleClick}/>;
 };
 
 App.propTypes = {
-  proposalsCount: PropTypes.number,
-  proposalsDescription: PropTypes.string,
+  offerCount: PropTypes.number,
+  offerDescriptions: PropTypes.arrayOf(PropTypes.string),
+  onTitleClick: PropTypes.func
 };
