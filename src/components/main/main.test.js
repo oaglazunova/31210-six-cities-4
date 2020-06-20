@@ -1,7 +1,5 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {describe, expect, it} from '@jest/globals';
-import {shallow} from 'enzyme';
 import {Main} from './main.jsx';
 
 const testData = {
@@ -21,20 +19,5 @@ describe(`Content rendered`, () => {
         <Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
-  });
-  // Step 2: Unit test - offerCount has a correct type
-  it(`check the type of offerCount`, () => {
-    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
-    expect(typeof wrapper.prop(`offerCount`) === `number`);
-  });
-  // Step 3: Unit test - offerDescriptions has a correct type
-  it(`check the type of offerDescriptions`, () => {
-    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
-    expect(Array.isArray(typeof wrapper.prop(`offerDescriptions`)));
-  });
-  // Step 4: Unit test - check if the logo img scr is correct
-  it(`images sources are correct`, () => {
-    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
-    expect(wrapper.find(`img`).naturalWidth).not.toEqual(0);
   });
 });

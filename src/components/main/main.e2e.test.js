@@ -1,6 +1,5 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {it, expect, describe, jest} from '@jest/globals';
 import {Main} from './main.jsx';
 
 const testData = {
@@ -30,5 +29,20 @@ describe(`Main component`, () => {
     });
 
     expect(handleTitleClick.mock.calls.length).toBe(main.find(`.place-card__name a`).length);
+  });
+  // Step 2: Unit test - offerCount has a correct type
+  it(`check the type of offerCount`, () => {
+    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
+    expect(typeof wrapper.prop(`offerCount`) === `number`);
+  });
+  // Step 3: Unit test - offerDescriptions has a correct type
+  it(`check the type of offerDescriptions`, () => {
+    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
+    expect(Array.isArray(typeof wrapper.prop(`offerDescriptions`)));
+  });
+  // Step 4: Unit test - check if the logo img scr is correct
+  it(`images sources are correct`, () => {
+    const wrapper = shallow(<Main offerCount={testData.errorCount} offerDescriptions={testData.offerDescriptions} handleTitleClick={()=>{}} />);
+    expect(wrapper.find(`img`).naturalWidth).not.toEqual(0);
   });
 });
