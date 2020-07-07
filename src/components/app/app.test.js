@@ -5,7 +5,6 @@ import {App} from './app.jsx';
 import testData from './app.test-data.js';
 
 describe(`Content rendered`, () => {
-  // Step 1: Snapshot test
   it(`renders correctly`, () => {
     const tree = renderer.create(
         <App offersData={testData} />

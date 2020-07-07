@@ -15,7 +15,6 @@ class PlaceCardList extends PureComponent {
 
   render() {
     const {offers, handleTitleClick} = this.props;
-    const {hoveredCard} = this.state;
 
     return (
       <>
@@ -27,9 +26,6 @@ class PlaceCardList extends PureComponent {
               handleCardHover={this._handleCardHover} />
           );
         })}
-
-        {/* eslint-disable-next-line no-console */}
-        {console.log(hoveredCard)}
       </>
     );
   }

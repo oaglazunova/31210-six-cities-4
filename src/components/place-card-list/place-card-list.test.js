@@ -5,7 +5,6 @@ import PlaceCardList from './place-card-list.jsx';
 import testData from './place-card-list.test-data.js';
 
 describe(`Content rendered`, () => {
-  // Step 1: Snapshot test
   it(`renders correctly`, () => {
     const tree = renderer.create(
         <PlaceCardList offers={testData} handleTitleClick={()=>{}} />
