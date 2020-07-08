@@ -2,19 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Main} from '../main/main.jsx';
 
-const handleTitleClick = () => {
+const _handleTitleClick = () => {
   // eslint-disable-next-line no-console
   console.log(`Title is clicked`);
 };
 
 export const App = (props) => {
-  const {offerCount, offerDescriptions} = props;
+  const {offersData} = props;
 
-  return <Main offerCount={offerCount} offerDescriptions={offerDescriptions} handleTitleClick={handleTitleClick}/>;
+  return <Main offersData={offersData} handleTitleClick={_handleTitleClick} />;
 };
 
 App.propTypes = {
-  offerCount: PropTypes.number,
-  offerDescriptions: PropTypes.arrayOf(PropTypes.string),
+  offersData: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    mark: PropTypes.string,
+    imgSrc: PropTypes.string,
+    priceValue: PropTypes.number.isRequired,
+    priceText: PropTypes.string,
+    rating: PropTypes.number,
+    description: PropTypes.string.isRequired,
+    type: PropTypes.string
+  })),
   onTitleClick: PropTypes.func
 };
