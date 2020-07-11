@@ -8,20 +8,17 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="place-card__mark"
-    >
-      <span>
-        premium
-      </span>
-    </div>
-    <div
       className="cities__image-wrapper place-card__image-wrapper"
     >
       <a
         href="#"
       >
         <img
-          alt="Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam."
+          alt={
+            Array [
+              "Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.",
+            ]
+          }
           className="place-card__image"
           height="200"
           src="img/apartment-01.jpg"
@@ -41,11 +38,13 @@ Array [
           <b
             className="place-card__price-value"
           >
+            €
             1230
           </b>
           <span
             className="place-card__price-text"
           >
+             
             per night
           </span>
         </div>
@@ -96,7 +95,7 @@ Array [
           href="#"
           onClick={[Function]}
         >
-          Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.
+          Beautiful & luxurious studio at great location
         </a>
       </h2>
       <p
@@ -111,7 +110,6 @@ Array [
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    
     <div
       className="cities__image-wrapper place-card__image-wrapper"
     >
@@ -119,7 +117,11 @@ Array [
         href="#"
       >
         <img
-          alt="NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West."
+          alt={
+            Array [
+              "NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West.",
+            ]
+          }
           className="place-card__image"
           height="200"
           src="img/apartment-02.jpg"
@@ -139,11 +141,13 @@ Array [
           <b
             className="place-card__price-value"
           >
+            €
             500
           </b>
           <span
             className="place-card__price-text"
           >
+             
             monthly
           </span>
         </div>
@@ -194,13 +198,13 @@ Array [
           href="#"
           onClick={[Function]}
         >
-          NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West.
+          NEW OFFER!
         </a>
       </h2>
       <p
         className="place-card__type"
       >
-        apartment
+        room
       </p>
     </div>
   </article>,
@@ -209,7 +213,6 @@ Array [
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    
     <div
       className="cities__image-wrapper place-card__image-wrapper"
     >
@@ -217,7 +220,12 @@ Array [
         href="#"
       >
         <img
-          alt="Note: No agency fees applicable when renting this apartment directly through Housing Agency. Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by."
+          alt={
+            Array [
+              "Note: No agency fees applicable when renting this apartment directly through Housing Agency.",
+              "Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.",
+            ]
+          }
           className="place-card__image"
           height="200"
           src="img/apartment-03.jpg"
@@ -237,6 +245,7 @@ Array [
           <b
             className="place-card__price-value"
           >
+            €
             600
           </b>
           
@@ -288,13 +297,13 @@ Array [
           href="#"
           onClick={[Function]}
         >
-          Note: No agency fees applicable when renting this apartment directly through Housing Agency. Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.
+          Characteristic apartment on the third floor with sunny balcony
         </a>
       </h2>
       <p
         className="place-card__type"
       >
-        apartment
+        house
       </p>
     </div>
   </article>,
@@ -304,20 +313,19 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="place-card__mark"
-    >
-      <span>
-        hot
-      </span>
-    </div>
-    <div
       className="cities__image-wrapper place-card__image-wrapper"
     >
       <a
         href="#"
       >
         <img
-          alt="Absurdly spacious mansion"
+          alt={
+            Array [
+              "Absurdly spacious mansion",
+              "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
+              "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.",
+            ]
+          }
           className="place-card__image"
           height="200"
           src="img/no-places.png"
@@ -337,11 +345,13 @@ Array [
           <b
             className="place-card__price-value"
           >
+            €
             2000
           </b>
           <span
             className="place-card__price-text"
           >
+             
             monthly
           </span>
         </div>
@@ -392,13 +402,13 @@ Array [
           href="#"
           onClick={[Function]}
         >
-          Absurdly spacious mansion
+          No agency fees applicable
         </a>
       </h2>
       <p
         className="place-card__type"
       >
-        apartment
+        hotel
       </p>
     </div>
   </article>,

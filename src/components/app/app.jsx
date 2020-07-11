@@ -1,40 +1,70 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Main} from '../main/main.jsx';
 import {Property} from '../property/property.jsx';
 
-import {TOfferPropTypes} from '../app/app.model.js';
+import history from '../../history.js';
+import {AppRoute} from '../../const.js';
 
-export const App = (props) => {
-  const {offersData} = props;
+import {TOfferPropTypes} from './app.model.js';
 
-  const _handleTitleClick = () => {
-    // eslint-disable-next-line no-console
-    console.log(`Title is clicked`);
-  };
+class App extends PureComponent {
+  constructor(props) {
+    super(props);
 
-  const _renderMain = () => {
-    return <Main offersData={offersData} handleTitleClick={_handleTitleClick} />;
-  };
+    this.state = {
+      clickedCard: null,
+    };
 
-  const _renderProperty = () => {
-    return <Property data={offersData[0]} />;
-  };
+    this._handleTitleClick = this._handleTitleClick.bind(this);
+  }
 
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          {_renderMain}
-        </Route>
-        <Route path="/dev-component-property">
-          {_renderProperty}
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  );
-};
+  render() {
+    const {offersData} = this.props;
+
+    return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path={AppRoute.ROOT}>
+            {this._renderScreen()}
+          </Route>
+          <Route exact path={AppRoute.OFFER}>
+            <Property data={offersData[this._returnClickedCardIndex(offersData)]} />
+          </Route>
+          <Route path="/dev-component-property">
+            <Property data={offersData[Math.floor(Math.random() * offersData.length)]} />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    );
+  }
+
+  _handleTitleClick(id) {
+    this.setState({clickedCard: id});
+  }
+
+  _returnClickedCardIndex(data) {
+    const {clickedCard} = this.state;
+
+    return data.findIndex((item) => item.id === clickedCard);
+  }
+
+  _renderScreen() {
+    const {offersData} = this.props;
+    const {clickedCard} = this.state;
+
+    if (clickedCard === null) {
+      return <Main offersData={offersData} handleTitleClick={this._handleTitleClick} />;
+    }
+
+    if (clickedCard >= 0) {
+      return history.push(AppRoute.OFFER);
+    }
+
+    return null;
+  }
+}
 
 App.propTypes = {
   offersData: PropTypes.arrayOf(TOfferPropTypes),

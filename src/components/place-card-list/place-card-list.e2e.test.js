@@ -4,12 +4,12 @@ import PlaceCardList from './place-card-list.jsx';
 
 import testData from './place-card-list.test-data.js';
 
-describe(`Main component`, () => {
+describe(`PlaceCardList component`, () => {
   it(`callback for title is received`, () => {
     const handleTitleClick = jest.fn();
 
     const main = shallow(
-        <PlaceCardList offers={testData} handleTitleClick={handleTitleClick}/>
+        <PlaceCardList offersData={testData} handleTitleClick={handleTitleClick}/>
     );
 
     main.find(`.place-card__name a`).forEach((node) => {
@@ -20,12 +20,12 @@ describe(`Main component`, () => {
   });
 
   it(`check the type of data`, () => {
-    const wrapper = shallow(<PlaceCardList offers={testData} handleTitleClick={()=>{}} />);
+    const wrapper = shallow(<PlaceCardList offersData={testData} handleTitleClick={()=>{}} />);
     expect(Array.isArray(wrapper.prop(`data`)));
   });
 
   it(`that images sources are correct`, () => {
-    const wrapper = shallow(<PlaceCardList offers={testData} handleTitleClick={()=>{}} />);
+    const wrapper = shallow(<PlaceCardList offersData={testData} handleTitleClick={()=>{}} />);
     expect(wrapper.find(`img`).naturalWidth).not.toEqual(0);
   });
 });

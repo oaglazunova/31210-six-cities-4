@@ -47,20 +47,17 @@ export const Property = (props) => {
               <span className="property__rating-value rating__value">{data.rating}</span>
             </div>
 
-            {(data.type || data.bedrooms || data.maxGuests) &&
-              <ul className="property__features">
-                {data.type && <li className="property__feature property__feature--entire">{data.type}</li>}
-                {data.bedrooms && <li className="property__feature property__feature--bedrooms">{data.bedrooms} Bedrooms</li>}
-                {data.maxGuests && <li className="property__feature property__feature--adults">Max {data.maxGuests} adults</li>}
-              </ul>
-            }
+            <ul className="property__features">
+              {data.type && <li className="property__feature property__feature--entire">{data.type}</li>}
+              {data.bedrooms && <li className="property__feature property__feature--bedrooms">{data.bedrooms} Bedrooms</li>}
+              {data.maxGuests && <li className="property__feature property__feature--adults">Max {data.maxGuests} adults</li>}
+            </ul>
 
-            {(data.priceValue || data.priceText) &&
-              <div className="property__price">
-                {data.priceValue && <b className="property__price-value">&euro;{data.priceValue}</b>}
-                {data.priceText && <span className="property__price-text">&nbsp;{data.priceText}</span>}
-              </div>
-            }
+
+            <div className="property__price">
+              {data.priceValue && <b className="property__price-value">&euro;{data.priceValue}</b>}
+              {data.priceText && <span className="property__price-text">&nbsp;{data.priceText}</span>}
+            </div>
 
             {data.utensils.length > 0 &&
               <div className="property__inside">

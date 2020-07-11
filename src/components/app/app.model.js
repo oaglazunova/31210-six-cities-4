@@ -22,7 +22,7 @@ export const TOfferPropTypes = PropTypes.shape({
   priceText: PropTypes.string,
   rating: ratingWithinFive,
   description: PropTypes.arrayOf(PropTypes.string).isRequired,
-  type: PropTypes.oneOf([`apartment`, `room`, `house`, `hotel`]),
+  type: PropTypes.oneOf([`apartment`, `room`, `house`, `hotel`]).isRequired,
   bedrooms: PropTypes.number,
   maxGuests: PropTypes.number,
   utensils: PropTypes.arrayOf(PropTypes.string),

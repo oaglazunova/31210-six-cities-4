@@ -7,7 +7,7 @@ import testData from './place-card-list.test-data.js';
 describe(`Content rendered`, () => {
   it(`renders correctly`, () => {
     const tree = renderer.create(
-        <PlaceCardList offers={testData} handleTitleClick={()=>{}} />
+        <PlaceCardList offersData={testData} handleTitleClick={()=>{}} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

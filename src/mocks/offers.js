@@ -72,7 +72,11 @@ export default [
     title: `Characteristic apartment on the third floor with sunny balcony`,
     isPremium: false,
     imgSrc: `img/apartment-03.jpg`,
-    gallery: [],
+    gallery: [
+      `img/apartment-03.jpg`,
+      `img/studio-photos.jpg`,
+      `img/amsterdam.jpg`,
+    ],
     priceValue: 600,
     priceText: ``,
     rating: null,
