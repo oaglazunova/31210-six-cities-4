@@ -7,23 +7,21 @@ exports[`Place Card content rendered renders correctly 1`] = `
   onMouseLeave={[Function]}
 >
   <div
-    className="place-card__mark"
-  >
-    <span>
-      premium
-    </span>
-  </div>
-  <div
     className="cities__image-wrapper place-card__image-wrapper"
   >
     <a
       href="#"
     >
       <img
-        alt="Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam."
+        alt={
+          Array [
+            "Note: No agency fees applicable when renting this apartment directly through Housing Agency.",
+            "Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.",
+          ]
+        }
         className="place-card__image"
         height="200"
-        src="img/apartment-01.jpg"
+        src="img/apartment-03.jpg"
         width="260"
       />
     </a>
@@ -40,13 +38,10 @@ exports[`Place Card content rendered renders correctly 1`] = `
         <b
           className="place-card__price-value"
         >
-          1230
+          €
+          600
         </b>
-        <span
-          className="place-card__price-text"
-        >
-          per night
-        </span>
+        
       </div>
       <button
         className="place-card__bookmark-button button"
@@ -95,13 +90,13 @@ exports[`Place Card content rendered renders correctly 1`] = `
         href="#"
         onClick={[Function]}
       >
-        Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.
+        Characteristic apartment on the third floor with sunny balcony
       </a>
     </h2>
     <p
       className="place-card__type"
     >
-      apartment
+      house
     </p>
   </div>
 </article>

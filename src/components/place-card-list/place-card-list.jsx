@@ -2,6 +2,8 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import {PlaceCard} from '../place-card/place-card.jsx';
 
+import {TOfferPropTypes} from '../app/app.model.js';
+
 class PlaceCardList extends PureComponent {
   constructor(props) {
     super(props);
@@ -14,11 +16,11 @@ class PlaceCardList extends PureComponent {
   }
 
   render() {
-    const {offers, handleTitleClick} = this.props;
+    const {offersData, handleTitleClick} = this.props;
 
     return (
       <>
-        {offers.map((offer) => {
+        {offersData.map((offer) => {
           return (
             <PlaceCard key={offer.id}
               data={offer}
@@ -36,17 +38,8 @@ class PlaceCardList extends PureComponent {
 }
 
 PlaceCardList.propTypes = {
-  offers: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    mark: PropTypes.string,
-    imgSrc: PropTypes.string,
-    priceValue: PropTypes.number.isRequired,
-    priceText: PropTypes.string,
-    rating: PropTypes.number,
-    description: PropTypes.string.isRequired,
-    type: PropTypes.string
-  })),
-  handleTitleClick: PropTypes.func
+  offersData: PropTypes.arrayOf(TOfferPropTypes),
+  handleTitleClick: PropTypes.func,
 };
 
 export default PlaceCardList;

@@ -1,13 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './app.jsx';
+import {Property} from './property.jsx';
 
-import testData from './app.test-data.js';
+import testData from './property.test-data.js';
 
 describe(`Content rendered`, () => {
+  // Step 1: Snapshot test
   it(`renders correctly`, () => {
     const tree = renderer.create(
-        <App offersData={testData} />
+        <Property data={testData} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

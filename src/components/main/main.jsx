@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlaceCardList from '../place-card-list/place-card-list.jsx';
 
+import {TOfferPropTypes} from '../app/app.model.js';
+
 export const Main = (props) => {
   const {offersData, handleTitleClick} = props;
 
@@ -31,22 +33,13 @@ export const Main = (props) => {
       </header>
 
       <main className="page__main {/*page__main--index*/}">
-        <PlaceCardList offers={offersData} handleTitleClick={handleTitleClick}/>
+        <PlaceCardList offersData={offersData} handleTitleClick={handleTitleClick}/>
       </main>
     </div>
   );
 };
 
 Main.propTypes = {
-  offersData: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    mark: PropTypes.string,
-    imgSrc: PropTypes.string,
-    priceValue: PropTypes.number.isRequired,
-    priceText: PropTypes.string,
-    rating: PropTypes.number,
-    description: PropTypes.string.isRequired,
-    type: PropTypes.string
-  })),
-  handleTitleClick: PropTypes.func
+  offersData: PropTypes.arrayOf(TOfferPropTypes),
+  handleTitleClick: PropTypes.func,
 };
