@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content rendered renders correctly 1`] = `
+Array [
+  <article
+    className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        premium
+      </span>
+    </div>
+    <div
+      className="cities__image-wrapper place-card__image-wrapper"
+    >
+      <a
+        href="#"
+      >
+        <img
+          alt="Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam."
+          className="place-card__image"
+          height="200"
+          src="img/apartment-01.jpg"
+          width="260"
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            1230
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            per night
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button"
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="#"
+          onClick={[Function]}
+        >
+          Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        apartment
+      </p>
+    </div>
+  </article>,
+  <article
+    className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    
+    <div
+      className="cities__image-wrapper place-card__image-wrapper"
+    >
+      <a
+        href="#"
+      >
+        <img
+          alt="NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West."
+          className="place-card__image"
+          height="200"
+          src="img/apartment-02.jpg"
+          width="260"
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            500
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            monthly
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button"
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="#"
+          onClick={[Function]}
+        >
+          NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West.
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        apartment
+      </p>
+    </div>
+  </article>,
+  <article
+    className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    
+    <div
+      className="cities__image-wrapper place-card__image-wrapper"
+    >
+      <a
+        href="#"
+      >
+        <img
+          alt="Note: No agency fees applicable when renting this apartment directly through Housing Agency. Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by."
+          className="place-card__image"
+          height="200"
+          src="img/apartment-03.jpg"
+          width="260"
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            600
+          </b>
+          
+        </div>
+        <button
+          className="place-card__bookmark-button button"
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="#"
+          onClick={[Function]}
+        >
+          Note: No agency fees applicable when renting this apartment directly through Housing Agency. Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        apartment
+      </p>
+    </div>
+  </article>,
+  <article
+    className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="place-card__mark"
+    >
+      <span>
+        hot
+      </span>
+    </div>
+    <div
+      className="cities__image-wrapper place-card__image-wrapper"
+    >
+      <a
+        href="#"
+      >
+        <img
+          alt="Absurdly spacious mansion"
+          className="place-card__image"
+          height="200"
+          src="img/no-places.png"
+          width="260"
+        />
+      </a>
+    </div>
+    <div
+      className="place-card__info"
+    >
+      <div
+        className="place-card__price-wrapper"
+      >
+        <div
+          className="place-card__price"
+        >
+          <b
+            className="place-card__price-value"
+          >
+            2000
+          </b>
+          <span
+            className="place-card__price-text"
+          >
+            monthly
+          </span>
+        </div>
+        <button
+          className="place-card__bookmark-button button"
+          type="button"
+        >
+          <svg
+            className="place-card__bookmark-icon"
+            height="19"
+            width="18"
+          >
+            <use
+              xlinkHref="#icon-bookmark"
+            />
+          </svg>
+          <span
+            className="visually-hidden"
+          >
+            To bookmarks
+          </span>
+        </button>
+      </div>
+      <div
+        className="place-card__rating rating"
+      >
+        <div
+          className="place-card__stars rating__stars"
+        >
+          <span
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+          <span
+            className="visually-hidden"
+          >
+            Rating
+          </span>
+        </div>
+      </div>
+      <h2
+        className="place-card__name"
+      >
+        <a
+          href="#"
+          onClick={[Function]}
+        >
+          Absurdly spacious mansion
+        </a>
+      </h2>
+      <p
+        className="place-card__type"
+      >
+        apartment
+      </p>
+    </div>
+  </article>,
+]
+`;
