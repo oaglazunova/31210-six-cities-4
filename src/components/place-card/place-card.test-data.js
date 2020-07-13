@@ -29,4 +29,5 @@ export default {
     avatar: `img/avatar-angelina.jpg`,
     isPro: false,
   },
+  coordinates: [52.3909553943508, 4.85309666406198],
 };

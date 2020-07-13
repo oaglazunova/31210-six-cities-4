@@ -31,4 +31,5 @@ export const TOfferPropTypes = PropTypes.shape({
     avatar: PropTypes.string,
     isSuper: PropTypes.bool,
   }).isRequired,
+  coordinates: PropTypes.arrayOf(PropTypes.number).isRequired,
 });

@@ -57,418 +57,609 @@ exports[`Content rendered renders correctly 1`] = `
     </div>
   </header>
   <main
-    className="page__main {/*page__main--index*/}"
+    className="page__main page__main--index"
   >
-    <article
-      className="cities__place-card place-card"
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
+    <h1
+      className="visually-hidden"
+    >
+      Cities
+    </h1>
+    <div
+      className="tabs"
+    >
+      <section
+        className="locations container"
+      >
+        <ul
+          className="locations__list tabs__list"
+        >
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item"
+              href="#"
+            >
+              <span>
+                Paris
+              </span>
+            </a>
+          </li>
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item"
+              href="#"
+            >
+              <span>
+                Cologne
+              </span>
+            </a>
+          </li>
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item"
+              href="#"
+            >
+              <span>
+                Brussels
+              </span>
+            </a>
+          </li>
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item tabs__item--active"
+            >
+              <span>
+                Amsterdam
+              </span>
+            </a>
+          </li>
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item"
+              href="#"
+            >
+              <span>
+                Hamburg
+              </span>
+            </a>
+          </li>
+          <li
+            className="locations__item"
+          >
+            <a
+              className="locations__item-link tabs__item"
+              href="#"
+            >
+              <span>
+                Dusseldorf
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div
+      className="cities"
     >
       <div
-        className="cities__image-wrapper place-card__image-wrapper"
+        className="cities__places-container container"
       >
-        <a
-          href="#"
+        <section
+          className="cities__places places"
         >
-          <img
-            alt={
-              Array [
-                "Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.",
-              ]
-            }
-            className="place-card__image"
-            height="200"
-            src="img/apartment-01.jpg"
-            width="260"
-          />
-        </a>
-      </div>
-      <div
-        className="place-card__info"
-      >
-        <div
-          className="place-card__price-wrapper"
-        >
-          <div
-            className="place-card__price"
+          <h2
+            className="visually-hidden"
           >
-            <b
-              className="place-card__price-value"
-            >
-              €
-              1230
-            </b>
+            Places
+          </h2>
+          <b
+            className="places__found"
+          >
+            4
+             places to stay in Amsterdam
+          </b>
+          <form
+            action="#"
+            className="places__sorting"
+            method="get"
+          >
             <span
-              className="place-card__price-text"
+              className="places__sorting-caption"
             >
-               
-              per night
+              Sort by
             </span>
+            <span
+              className="places__sorting-type"
+              tabIndex="0"
+            >
+              Popular
+              <svg
+                className="places__sorting-arrow"
+                height="4"
+                width="7"
+              >
+                <use
+                  xlinkHref="#icon-arrow-select"
+                />
+              </svg>
+            </span>
+            <ul
+              className="places__options places__options--custom places__options--opened"
+            >
+              <li
+                className="places__option places__option--active"
+                tabIndex="0"
+              >
+                Popular
+              </li>
+              <li
+                className="places__option"
+                tabIndex="0"
+              >
+                Price: low to high
+              </li>
+              <li
+                className="places__option"
+                tabIndex="0"
+              >
+                Price: high to low
+              </li>
+              <li
+                className="places__option"
+                tabIndex="0"
+              >
+                Top rated first
+              </li>
+            </ul>
+          </form>
+          <div
+            className="cities__places-list places__list tabs__content"
+          >
+            <article
+              className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="cities__image-wrapper place-card__image-wrapper"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    alt={
+                      Array [
+                        "Viewings possible from July 6, 2020. Available from mid-July. Atmospheric apartment located on the 2nd floor of the complex and located right in the center of Amsterdam.",
+                      ]
+                    }
+                    className="place-card__image"
+                    height="200"
+                    src="img/apartment-01.jpg"
+                    width="260"
+                  />
+                </a>
+              </div>
+              <div
+                className="place-card__info"
+              >
+                <div
+                  className="place-card__price-wrapper"
+                >
+                  <div
+                    className="place-card__price"
+                  >
+                    <b
+                      className="place-card__price-value"
+                    >
+                      €
+                      1230
+                    </b>
+                    <span
+                      className="place-card__price-text"
+                    >
+                       
+                      per night
+                    </span>
+                  </div>
+                  <button
+                    className="place-card__bookmark-button button"
+                    type="button"
+                  >
+                    <svg
+                      className="place-card__bookmark-icon"
+                      height="19"
+                      width="18"
+                    >
+                      <use
+                        xlinkHref="#icon-bookmark"
+                      />
+                    </svg>
+                    <span
+                      className="visually-hidden"
+                    >
+                      To bookmarks
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="place-card__rating rating"
+                >
+                  <div
+                    className="place-card__stars rating__stars"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <span
+                      className="visually-hidden"
+                    >
+                      Rating
+                    </span>
+                  </div>
+                </div>
+                <h2
+                  className="place-card__name"
+                >
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    Beautiful & luxurious studio at great location
+                  </a>
+                </h2>
+                <p
+                  className="place-card__type"
+                >
+                  apartment
+                </p>
+              </div>
+            </article>
+            <article
+              className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="cities__image-wrapper place-card__image-wrapper"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    alt={
+                      Array [
+                        "NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West.",
+                      ]
+                    }
+                    className="place-card__image"
+                    height="200"
+                    src="img/apartment-02.jpg"
+                    width="260"
+                  />
+                </a>
+              </div>
+              <div
+                className="place-card__info"
+              >
+                <div
+                  className="place-card__price-wrapper"
+                >
+                  <div
+                    className="place-card__price"
+                  >
+                    <b
+                      className="place-card__price-value"
+                    >
+                      €
+                      500
+                    </b>
+                    <span
+                      className="place-card__price-text"
+                    >
+                       
+                      monthly
+                    </span>
+                  </div>
+                  <button
+                    className="place-card__bookmark-button button"
+                    type="button"
+                  >
+                    <svg
+                      className="place-card__bookmark-icon"
+                      height="19"
+                      width="18"
+                    >
+                      <use
+                        xlinkHref="#icon-bookmark"
+                      />
+                    </svg>
+                    <span
+                      className="visually-hidden"
+                    >
+                      To bookmarks
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="place-card__rating rating"
+                >
+                  <div
+                    className="place-card__stars rating__stars"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <span
+                      className="visually-hidden"
+                    >
+                      Rating
+                    </span>
+                  </div>
+                </div>
+                <h2
+                  className="place-card__name"
+                >
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    NEW OFFER!
+                  </a>
+                </h2>
+                <p
+                  className="place-card__type"
+                >
+                  room
+                </p>
+              </div>
+            </article>
+            <article
+              className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="cities__image-wrapper place-card__image-wrapper"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    alt={
+                      Array [
+                        "Note: No agency fees applicable when renting this apartment directly through Housing Agency.",
+                        "Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.",
+                      ]
+                    }
+                    className="place-card__image"
+                    height="200"
+                    src="img/apartment-03.jpg"
+                    width="260"
+                  />
+                </a>
+              </div>
+              <div
+                className="place-card__info"
+              >
+                <div
+                  className="place-card__price-wrapper"
+                >
+                  <div
+                    className="place-card__price"
+                  >
+                    <b
+                      className="place-card__price-value"
+                    >
+                      €
+                      600
+                    </b>
+                    
+                  </div>
+                  <button
+                    className="place-card__bookmark-button button"
+                    type="button"
+                  >
+                    <svg
+                      className="place-card__bookmark-icon"
+                      height="19"
+                      width="18"
+                    >
+                      <use
+                        xlinkHref="#icon-bookmark"
+                      />
+                    </svg>
+                    <span
+                      className="visually-hidden"
+                    >
+                      To bookmarks
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="place-card__rating rating"
+                >
+                  <div
+                    className="place-card__stars rating__stars"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <span
+                      className="visually-hidden"
+                    >
+                      Rating
+                    </span>
+                  </div>
+                </div>
+                <h2
+                  className="place-card__name"
+                >
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    Characteristic apartment on the third floor with sunny balcony
+                  </a>
+                </h2>
+                <p
+                  className="place-card__type"
+                >
+                  house
+                </p>
+              </div>
+            </article>
+            <article
+              className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            >
+              <div
+                className="cities__image-wrapper place-card__image-wrapper"
+              >
+                <a
+                  href="#"
+                >
+                  <img
+                    alt={
+                      Array [
+                        "Absurdly spacious mansion",
+                        "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
+                        "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.",
+                      ]
+                    }
+                    className="place-card__image"
+                    height="200"
+                    src="img/no-places.png"
+                    width="260"
+                  />
+                </a>
+              </div>
+              <div
+                className="place-card__info"
+              >
+                <div
+                  className="place-card__price-wrapper"
+                >
+                  <div
+                    className="place-card__price"
+                  >
+                    <b
+                      className="place-card__price-value"
+                    >
+                      €
+                      2000
+                    </b>
+                    <span
+                      className="place-card__price-text"
+                    >
+                       
+                      monthly
+                    </span>
+                  </div>
+                  <button
+                    className="place-card__bookmark-button button"
+                    type="button"
+                  >
+                    <svg
+                      className="place-card__bookmark-icon"
+                      height="19"
+                      width="18"
+                    >
+                      <use
+                        xlinkHref="#icon-bookmark"
+                      />
+                    </svg>
+                    <span
+                      className="visually-hidden"
+                    >
+                      To bookmarks
+                    </span>
+                  </button>
+                </div>
+                <div
+                  className="place-card__rating rating"
+                >
+                  <div
+                    className="place-card__stars rating__stars"
+                  >
+                    <span
+                      style={
+                        Object {
+                          "width": "100%",
+                        }
+                      }
+                    />
+                    <span
+                      className="visually-hidden"
+                    >
+                      Rating
+                    </span>
+                  </div>
+                </div>
+                <h2
+                  className="place-card__name"
+                >
+                  <a
+                    href="#"
+                    onClick={[Function]}
+                  >
+                    No agency fees applicable
+                  </a>
+                </h2>
+                <p
+                  className="place-card__type"
+                >
+                  hotel
+                </p>
+              </div>
+            </article>
           </div>
-          <button
-            className="place-card__bookmark-button button"
-            type="button"
-          >
-            <svg
-              className="place-card__bookmark-icon"
-              height="19"
-              width="18"
-            >
-              <use
-                xlinkHref="#icon-bookmark"
-              />
-            </svg>
-            <span
-              className="visually-hidden"
-            >
-              To bookmarks
-            </span>
-          </button>
-        </div>
+        </section>
         <div
-          className="place-card__rating rating"
+          className="cities__right-section"
         >
-          <div
-            className="place-card__stars rating__stars"
+          <section
+            className="/*cities__map*/ map"
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
           >
-            <span
+            <div
               style={
                 Object {
+                  "height": "100%",
                   "width": "100%",
                 }
               }
             />
-            <span
-              className="visually-hidden"
-            >
-              Rating
-            </span>
-          </div>
+          </section>
         </div>
-        <h2
-          className="place-card__name"
-        >
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            Beautiful & luxurious studio at great location
-          </a>
-        </h2>
-        <p
-          className="place-card__type"
-        >
-          apartment
-        </p>
       </div>
-    </article>
-    <article
-      className="cities__place-card place-card"
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-    >
-      <div
-        className="cities__image-wrapper place-card__image-wrapper"
-      >
-        <a
-          href="#"
-        >
-          <img
-            alt={
-              Array [
-                "NEW OFFER! Spacious unfurnished (furniture on the pictures is from the previous occupants) 2-bedroom apartment with smart lay-out and balcony located in the bustling Amsterdam-West.",
-              ]
-            }
-            className="place-card__image"
-            height="200"
-            src="img/apartment-02.jpg"
-            width="260"
-          />
-        </a>
-      </div>
-      <div
-        className="place-card__info"
-      >
-        <div
-          className="place-card__price-wrapper"
-        >
-          <div
-            className="place-card__price"
-          >
-            <b
-              className="place-card__price-value"
-            >
-              €
-              500
-            </b>
-            <span
-              className="place-card__price-text"
-            >
-               
-              monthly
-            </span>
-          </div>
-          <button
-            className="place-card__bookmark-button button"
-            type="button"
-          >
-            <svg
-              className="place-card__bookmark-icon"
-              height="19"
-              width="18"
-            >
-              <use
-                xlinkHref="#icon-bookmark"
-              />
-            </svg>
-            <span
-              className="visually-hidden"
-            >
-              To bookmarks
-            </span>
-          </button>
-        </div>
-        <div
-          className="place-card__rating rating"
-        >
-          <div
-            className="place-card__stars rating__stars"
-          >
-            <span
-              style={
-                Object {
-                  "width": "100%",
-                }
-              }
-            />
-            <span
-              className="visually-hidden"
-            >
-              Rating
-            </span>
-          </div>
-        </div>
-        <h2
-          className="place-card__name"
-        >
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            NEW OFFER!
-          </a>
-        </h2>
-        <p
-          className="place-card__type"
-        >
-          room
-        </p>
-      </div>
-    </article>
-    <article
-      className="cities__place-card place-card"
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-    >
-      <div
-        className="cities__image-wrapper place-card__image-wrapper"
-      >
-        <a
-          href="#"
-        >
-          <img
-            alt={
-              Array [
-                "Note: No agency fees applicable when renting this apartment directly through Housing Agency.",
-                "Characteristic apartment on the third floor with sunny balcony (south) in the beautiful and quiet Burmanstraat nearby the popular area of the Amstel river. Shops, restaurants, and Pijp within walking distance. Metro line close by.",
-              ]
-            }
-            className="place-card__image"
-            height="200"
-            src="img/apartment-03.jpg"
-            width="260"
-          />
-        </a>
-      </div>
-      <div
-        className="place-card__info"
-      >
-        <div
-          className="place-card__price-wrapper"
-        >
-          <div
-            className="place-card__price"
-          >
-            <b
-              className="place-card__price-value"
-            >
-              €
-              600
-            </b>
-            
-          </div>
-          <button
-            className="place-card__bookmark-button button"
-            type="button"
-          >
-            <svg
-              className="place-card__bookmark-icon"
-              height="19"
-              width="18"
-            >
-              <use
-                xlinkHref="#icon-bookmark"
-              />
-            </svg>
-            <span
-              className="visually-hidden"
-            >
-              To bookmarks
-            </span>
-          </button>
-        </div>
-        <div
-          className="place-card__rating rating"
-        >
-          <div
-            className="place-card__stars rating__stars"
-          >
-            <span
-              style={
-                Object {
-                  "width": "100%",
-                }
-              }
-            />
-            <span
-              className="visually-hidden"
-            >
-              Rating
-            </span>
-          </div>
-        </div>
-        <h2
-          className="place-card__name"
-        >
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            Characteristic apartment on the third floor with sunny balcony
-          </a>
-        </h2>
-        <p
-          className="place-card__type"
-        >
-          house
-        </p>
-      </div>
-    </article>
-    <article
-      className="cities__place-card place-card"
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-    >
-      <div
-        className="cities__image-wrapper place-card__image-wrapper"
-      >
-        <a
-          href="#"
-        >
-          <img
-            alt={
-              Array [
-                "Absurdly spacious mansion",
-                "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
-                "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.",
-              ]
-            }
-            className="place-card__image"
-            height="200"
-            src="img/no-places.png"
-            width="260"
-          />
-        </a>
-      </div>
-      <div
-        className="place-card__info"
-      >
-        <div
-          className="place-card__price-wrapper"
-        >
-          <div
-            className="place-card__price"
-          >
-            <b
-              className="place-card__price-value"
-            >
-              €
-              2000
-            </b>
-            <span
-              className="place-card__price-text"
-            >
-               
-              monthly
-            </span>
-          </div>
-          <button
-            className="place-card__bookmark-button button"
-            type="button"
-          >
-            <svg
-              className="place-card__bookmark-icon"
-              height="19"
-              width="18"
-            >
-              <use
-                xlinkHref="#icon-bookmark"
-              />
-            </svg>
-            <span
-              className="visually-hidden"
-            >
-              To bookmarks
-            </span>
-          </button>
-        </div>
-        <div
-          className="place-card__rating rating"
-        >
-          <div
-            className="place-card__stars rating__stars"
-          >
-            <span
-              style={
-                Object {
-                  "width": "100%",
-                }
-              }
-            />
-            <span
-              className="visually-hidden"
-            >
-              Rating
-            </span>
-          </div>
-        </div>
-        <h2
-          className="place-card__name"
-        >
-          <a
-            href="#"
-            onClick={[Function]}
-          >
-            No agency fees applicable
-          </a>
-        </h2>
-        <p
-          className="place-card__type"
-        >
-          hotel
-        </p>
-      </div>
-    </article>
+    </div>
   </main>
 </div>
 `;

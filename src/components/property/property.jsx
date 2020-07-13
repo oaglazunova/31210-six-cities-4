@@ -1,4 +1,6 @@
 import React from 'react';
+// import Map from '../map/map.jsx';
+
 import {TOfferPropTypes} from '../app/app.model.js';
 
 export const Property = (props) => {
@@ -169,7 +171,11 @@ export const Property = (props) => {
             </section>
           </div>
         </div>
-        <section className="property__map map" />
+
+        {/* <section className="property__map map" >
+          <Map data={data.coordinates} />
+        </section>*/}
+
       </section>
 
       <div className="container">

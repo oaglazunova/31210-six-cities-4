@@ -41,6 +41,7 @@ export default [
       avatar: `img/avatar-angelina.jpg`,
       isPro: true,
     },
+    coordinates: [52.3909553943508, 4.85309666406198],
   },
   {
     id: 102,
@@ -66,6 +67,7 @@ export default [
       avatar: ``,
       isPro: false,
     },
+    coordinates: [52.3909553943508, 4.85309666406198],
   },
   {
     id: 103,
@@ -98,6 +100,7 @@ export default [
       avatar: `img/avatar-angelina.jpg`,
       isPro: false,
     },
+    coordinates: [52.3909553943508, 4.85309666406198],
   },
   {
     id: 104,
@@ -123,5 +126,6 @@ export default [
       avatar: `img/avatar-angelina.jpg`,
       isPro: true,
     },
+    coordinates: [52.3909553943508, 4.85309666406198],
   },
 ];

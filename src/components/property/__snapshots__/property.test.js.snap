@@ -446,9 +446,6 @@ exports[`Content rendered renders correctly 1`] = `
         </section>
       </div>
     </div>
-    <section
-      className="property__map map"
-    />
   </section>
   <div
     className="container"
