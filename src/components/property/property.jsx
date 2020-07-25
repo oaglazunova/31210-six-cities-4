@@ -169,11 +169,6 @@ export const Property = (props) => {
             </section>
           </div>
         </div>
-
-        {/* <section className="property__map map" >
-          <Map data={data.coordinates} />
-        </section>*/}
-
       </section>
 
       <div className="container">
