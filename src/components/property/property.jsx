@@ -1,6 +1,4 @@
 import React from 'react';
-// import Map from '../map/map.jsx';
-
 import {TOfferPropTypes} from '../app/app.model.js';
 
 export const Property = (props) => {
